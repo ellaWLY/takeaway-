@@ -1,11 +1,11 @@
 <template>
-    <div>这里是首页内容区</div>
+    <div>商家</div>
 </template>
 
 <script>
 
 export default {
-    name: 'homeIndex'
+    name: 'merchant'
 }
 
 </script>

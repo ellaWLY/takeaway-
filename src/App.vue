@@ -39,7 +39,7 @@
       </div>
       <transition name="fade">
         <div class="detail_box_hide" v-show="hideBoxShowfun">
-          <div>
+          <div class="detail_boxBox">
             <div class="detail-title">
               <span>优惠</span>
               <span @click="hideBoxHide()"><i class="icon iconfont icon-ico_back"></i></span>
@@ -72,6 +72,20 @@
         </div>
       </transition>
     </div>
+    
+    <!-- tab切换 -->
+    <div class="tab">
+      <div class="tab_item">
+        <router-link to="/orderFood" Class="active">点餐</router-link>
+      </div>
+      <div class="tab_item">
+        <router-link to="/review">评价</router-link>
+      </div>
+      <div class="tab_item">
+        <router-link to="/merchant">商家</router-link>
+      </div>
+    </div>
+
     <router-view/>
   </div>
 </template>
@@ -197,7 +211,6 @@ export default {
 .detail_box {
   padding-top: 3rem;
   width: 100%;
-  height: 30rem;
 }
 .detail_box_show {
   position: relative;
@@ -350,6 +363,7 @@ export default {
 }
 .notice {
   text-align: left;
+  padding-bottom: 1rem;
 }
 .hide_bottom {
   position: fixed;
@@ -367,5 +381,32 @@ export default {
 .hide_bottom span .icon {
   font-size: 0.54rem;
   color: rgb(159,159,159);
+}
+.detail_boxBox {
+  max-height: 6.5rem;
+  overflow-y: scroll;
+}
+.tab {
+  width: 100%;
+  overflow: hidden;
+  padding: 0.3rem 0 0.2rem;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+.tab_item {
+  display: inline-block;
+  width: 33.33%;
+  float: left;
+  font-size: 0.28rem;
+}
+.tab_item a {
+  color: rgb(102, 102, 102);
+} 
+.tab_item .active ,
+.router-link-active {
+  color: rgb(51,51,51);
+  font-weight: bold;
+  padding-bottom: 0.14rem;
+  border-bottom: 4px solid rgb(73,147,247);
 }
 </style>
