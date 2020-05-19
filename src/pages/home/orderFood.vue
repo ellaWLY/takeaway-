@@ -32,7 +32,7 @@ export default {
         return {
             recommedList: [
                 {
-                    img: '/static/img/a.d99be3d.jpg',
+                    img: require('../../assets/a.jpg'),
                     name: '奇乐盐酥鸡',
                     sale: true,
                     saleNum: 52,
@@ -41,7 +41,7 @@ export default {
                     price: 23
                 },
                 {
-                    img: '/static/img/b.63c7002.jpg',
+                    img: require('../../assets/b.jpg'),
                     name: '僵尸鸡翅',
                     sale: true,
                     saleNum: 202,
@@ -50,7 +50,7 @@ export default {
                     price: 89
                 },
                 {
-                    img: '/static/img/c.c64731d.jpg',
+                    img: require('../../assets/c.jpg'),
                     name: '铁锹韩式牛肉饭套餐',
                     sale: true,
                     saleNum: 30,
@@ -59,7 +59,7 @@ export default {
                     price: 60
                 },
                 {
-                    img: '/static/img/e.95a883d.jpg',
+                    img: require('../../assets/d.jpg'),
                     name: '香脆炸鸡',
                     sale: true,
                     saleNum: 280,
